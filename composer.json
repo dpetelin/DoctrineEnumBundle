@@ -1,8 +1,8 @@
 {
-    "name": "fresh/doctrine-enum-bundle",
+    "name": "dpetelin/doctrine-enum-bundle",
     "description": "Provides support of ENUM type for Doctrine2 in Symfony2 applications.",
-    "keywords": ["bundle", "symfony", "doctrine", "entity", "enum", "type", "DBAL", "MySQL", "SQLite", "PostgreSQL"],
-    "homepage": "https://github.com/fre5h/DoctrineEnumBundle",
+    "keywords": ["bundle", "symfony", "doctrine", "entity", "enum", "type", "DBAL", "MySQL", "SQLite", "PostgreSQL", "MSSQL"],
+    "homepage": "https://github.com/dpetelin/DoctrineEnumBundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -12,15 +12,11 @@
             "role": "Creator"
         },
         {
-            "name": "Community",
-            "homepage": "https://github.com/fre5h/DoctrineEnumBundle/graphs/contributors",
-            "role": "Developers"
+            "name": "Dmitry Petelin",
+            "email": "dpetelin@issart.com",
+            "role": "Editor"
         }
     ],
-    "support": {
-        "email": "genvaldartem@gmail.com",
-        "issues": "https://github.com/fre5h/DoctrineEnumBundle/issues"
-    },
     "require": {
         "php": ">=5.4.0",
         "symfony/symfony": "~2.6|~3.0",
@@ -33,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Fresh\\DoctrineEnumBundle\\": ""
+            "ISSArt\\DoctrineEnumBundle\\": ""
         }
     },
     "extra": {

@@ -13,6 +13,7 @@ namespace Fresh\DoctrineEnumBundle\DBAL\Types;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Platforms\PostgreSqlPlatform;
 use Doctrine\DBAL\Platforms\SqlitePlatform;
+use Doctrine\DBAL\Platforms\SQLServerPlatform;
 use Doctrine\DBAL\Types\Type;
 use Fresh\DoctrineEnumBundle\Util\LegacyFormHelper;
 
@@ -74,6 +75,10 @@ abstract class AbstractEnumType extends Type
         }
 
         if ($platform instanceof PostgreSqlPlatform) {
+            return sprintf('VARCHAR(255) CHECK(%s IN (%s))', $fieldDeclaration['name'], $values);
+        }
+
+        if ($platform instanceof SQLServerPlatform) {
             return sprintf('VARCHAR(255) CHECK(%s IN (%s))', $fieldDeclaration['name'], $values);
         }
 

@@ -19,6 +19,7 @@ Provides support of **ENUM type** for Doctrine in Symfony applications.
 * MySQL
 * SQLite
 * PostgreSQL
+* MSSQL
 
 ## Installation
 
